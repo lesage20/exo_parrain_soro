@@ -1,33 +1,5 @@
-# Exercice 1
-#Écrire, avec des comparaisons, un algorithme qui affiche l’état de l’eau (glace, liquide, vapeur) en fonction de sa température.
 
-while True:
-    temperature = input("la température de l'eau: ")
-    if not temperature:
-        break
-    temperature = int(temperature)
-    if temperature <= 0:
-        print("\nC'est de la Glace")
-    elif 0< temperature < 100:
-        print("\nC'est du Liquide ") 
-    else:
-        print("\nC'est de la Vapeur")
-
-# Exercice 2
-#Écrire le même algorithme, mais en utilisant deux variables booléennes pour vérifier l’état de l’eau, sans comparaisons dans les SI.
-
-while True:
-    temperature = input("température de l'eau: ")
-    if not temperature:
-        break
-    temperature = int(temperature)
-    a = (temperature <= 0)
-    b = (0 < temperature < 100)
-    msg = "c'est de la Glace !" if a else "c'est du Liquide " if b else "Oups de la Vapeur"
-    print("\n", msg)
-    
-
-# exo 4
+# exo 3.2
 def exo4():
     p = 0.9
     x = 2
@@ -38,8 +10,8 @@ def exo4():
     print(eval(e),   eval(f),  x) 
 
 
-# exo 5
-def exo5():
+# exo 4
+def exo4():
     
     tarifs = ["bleu", "vert", "orange" ,"rouge"]
     tarif = ""
@@ -91,7 +63,7 @@ def exo5():
             tarif = tarif
     print("votre tarif est : ", tarif)
     
-exo5()
+exo4()
     
 
 
