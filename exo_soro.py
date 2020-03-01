@@ -1,69 +1,3 @@
-# # exo 1
-# def exo1():
-#     eau = ""
-#     try:
-#         x = input("Entrez la temperature de l'eau: ")
-#         x = int(x) 
-#         def affiche():
-#             print(f"l'eau est a l'etat: {eau}")
-#         if x <= 0:
-#             eau = "solide"
-#             affiche()
-#         elif 0 < x < 100:
-#             eau = "liquide" 
-#             affiche()
-#         elif x >= 100:
-#             eau = "gazeux"
-#             affiche()
-#         elif type(x) == str :
-#             print("OOOOPS VEUILLEZ ENTRER DES CHIFFRE SVP")
-#     except ValueError:
-#         print("Vous avez entrer de mauvaise données veuillez verifier la valeur doit etre un nombre")
-            
-
-
-
-# # exo2
-
-# def exo2():
-#     eau = ""
-#     try:
-#         i = input("Entrez la temperature de l'eau: ")
-#         i=int(i)
-#         x = i <= 0
-#         y = [range(100)] 
-#         def affiche():
-#             print(f"l'eau est a l'etat: {eau}")
-#         if bool(x):
-#             eau = "solide"
-            
-#             affiche()
-#         elif x is False and  i in range(100):
-#                 eau = "liquide" 
-                
-#                 affiche()
-#         elif x is False and not i in range(100) :
-#                 eau = "gazeux"
-#                 affiche()
-        
-#     except ValueError:
-#         print("Vous avez entrer de mauvaise données veuillez verifier la valeur doit etre un nombre")
-
-
-
-# exo 3
-def exo3():
-    n = 0
-    liste = [n]
-    a = input("entrez un nombre: ")
-    a = int(a)
-    while sum(liste) < int(a) + 1 :
-        n = n + 1
-        liste.append(n)
-    print(f"Le plut petit entier est : {n} et Hn = ", sum(liste))
-
-
-
 # exo 4
 def exo4():
     p = 0.9
@@ -74,11 +8,17 @@ def exo4():
         x += 1
     print(eval(e),   eval(f),  x) 
 
+
+# exo 5
 def exo5():
     
     tarifs = ["bleu", "vert", "orange" ,"rouge"]
     tarif = ""
-    age, temps_permis,accident, assurance, satisfait = 26, 3, 0, 1, 6
+    age = int(input("Veuillez saisir votre age "))
+    temps_permis = int(input("Depuis Combien d'années vous avez le permis? "))
+    accident = int(input("Combien d'accident avez vous fait depuis l'obtention de votre permis ")) 
+    assurance = False
+    satisfait = int(input("Depuis Combien d'années vous etes clients chez nous? "))
     
     if age <= 25 and temps_permis <=2:
         if not accident :
@@ -120,7 +60,9 @@ def exo5():
             tarif = tarifs[tarifs.index(tarif) -1]
         else:
             tarif = tarif
-    print(tarif)
+    print("votre tarif est : ", tarif)
+    
+exo5()
     
 
 
